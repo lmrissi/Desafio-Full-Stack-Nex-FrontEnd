@@ -7,7 +7,7 @@ import { createUserOnApi } from '../../services/api'
 import './CreateUser.css';
 
 function initialState() {
-  return { name: '', email: '', password: '' };
+  return { name: null, email: null, password: null };
 }
 
 const CreateUser = () => {
@@ -22,7 +22,7 @@ const CreateUser = () => {
       setUser(result.data.user)
       history.push('/login')
     })
-    .catch(error => ({ error: error.message }))
+    .catch(error => setError(error.response.data))
   }
 
   function onChange(event) {
@@ -78,7 +78,7 @@ const CreateUser = () => {
               value={values.password} />
           </div>
           {error && (
-            <div className="user-login__error">{error}</div>
+            <div className="create-user__error">{error}</div>
           )}
           <UIButton
             type="submit"

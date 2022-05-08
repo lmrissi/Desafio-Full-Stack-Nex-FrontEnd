@@ -7,7 +7,7 @@ import StoreContext from '../Store/Context';
 import './CreateProduct.css';
 
 function initialState() {
-  return { name: '', description: '', price: '' };
+  return { name: null, description: null, price: null };
 }
 
 const CreateProduct = () => {
@@ -23,7 +23,7 @@ const CreateProduct = () => {
       setProducts(result.data.user)
       history.push('/products')
     })
-    .catch(error => ({ error: error.message }))
+    .catch(error => setError(error.response.data))
   }
 
   function onChange(event) {

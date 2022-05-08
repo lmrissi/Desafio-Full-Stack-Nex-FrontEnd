@@ -68,3 +68,11 @@ body {
     justify-content: center;
     align-items: baseline
   }
+
+  .user-login__error {
+    margin-bottom: 5px;
+    color: #ff3333;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+  }

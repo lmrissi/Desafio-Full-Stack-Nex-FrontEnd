@@ -7,7 +7,7 @@ import { getApiToken } from 'services/api';
 import './Login.css';
 
 function initialState() {
-  return { user: '', password: '' };
+  return { user: null, password: null };
 }
 
 const UserLogin = () => {
@@ -23,7 +23,7 @@ const UserLogin = () => {
       setToken(result.data.token)
       history.push('/products')
     })
-    .catch(error => ({ error: error.message }))
+    .catch(error => setError(error.response.data))
   }
 
   function onChange(event) {
@@ -40,7 +40,6 @@ const UserLogin = () => {
 
     login(values);
 
-    setError(error);
     setValues(initialState);
   }
 
@@ -48,7 +47,7 @@ const UserLogin = () => {
     <div className="wrapper">
       <div className="user-login">
         <div class="Logo">
-          <h1 className="user-login__title">Produtos</h1>
+          <h1 className="user-login__title">Login</h1>
         </div>
         <form onSubmit={onSubmit}>
           <div className="user-login__form-control">
