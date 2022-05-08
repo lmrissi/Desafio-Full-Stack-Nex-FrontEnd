@@ -3,6 +3,13 @@ body {
     margin: 0 auto;
     font-family: Roboto-Regular;
   }
+
+  .return-to-login {
+    font-family: Roboto-Regular;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 18px;
+  }
   
   .user-login {
       width: 400px;

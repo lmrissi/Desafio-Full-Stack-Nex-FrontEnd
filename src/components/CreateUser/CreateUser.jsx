@@ -89,6 +89,9 @@ const CreateUser = () => {
             Criar Usuário
           </UIButton>
         </form>
+        <div className="return-to-login">
+          <a href="/login">Voltar para login</a>
+        </div>
       </div>
     </div>
   );

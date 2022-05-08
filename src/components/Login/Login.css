@@ -4,6 +4,13 @@ body {
   font-family: Roboto-Regular;
 }
 
+.create-user {
+  font-family: Roboto-Regular;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
 .user-login {
     width: 400px;
     margin: 0 auto;
