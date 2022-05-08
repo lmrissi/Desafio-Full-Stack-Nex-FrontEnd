@@ -4,12 +4,12 @@ body {
     font-family: Roboto-Regular;
   }
   
-  .user-login {
+  .create-product {
       width: 400px;
       margin: 0 auto;
     }
     
-    .user-login__title {
+    .create-product__title {
       font-family: 'Roboto-light';
       font-size: 40px;
       margin-top: 30px;
@@ -18,19 +18,19 @@ body {
       text-align: center;
     }
     
-    .user-login__form-control {
+    .create-product__form-control {
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
     }
     
-    .user-login__form-control label {
+    .create-product__form-control label {
       margin-bottom: 5px;
       color: #979797;
       font-size: 18px;
     }
     
-    .user-login__form-control input {
+    .create-product__form-control input {
       font-family: 'Roboto-light';
       font-size: 16px;
       border-radius: 4px;
@@ -39,7 +39,7 @@ body {
       padding: 5px 10px;
     }
     
-    .user-login__submit-button {
+    .create-product__submit-button {
       width: 100%;
       margin-top: 30px;
       margin-bottom: 30px;

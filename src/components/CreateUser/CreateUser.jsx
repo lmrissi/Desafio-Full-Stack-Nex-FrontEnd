@@ -45,12 +45,12 @@ const CreateUser = () => {
 
   return (
     <div className="wrapper">
-      <div className="user-login">
+      <div className="create-user">
         <div class="Logo">
-          <h1 className="user-login__title">Criar Usuário</h1>
+          <h1 className="create-user__title">Criar Usuário</h1>
         </div>
         <form onSubmit={onSubmit}>
-          <div className="user-login__form-control">
+          <div className="create-user__form-control">
             <label htmlFor="name">Nome</label>
             <input
               id="name"
@@ -59,7 +59,7 @@ const CreateUser = () => {
               onChange={onChange}
               value={values.name} />
           </div>
-          <div className="user-login__form-control">
+          <div className="create-user__form-control">
             <label htmlFor="email">Email</label>
             <input
               id="email"
@@ -68,7 +68,7 @@ const CreateUser = () => {
               onChange={onChange}
               value={values.email} />
           </div>
-          <div className="user-login__form-control">
+          <div className="create-user__form-control">
             <label htmlFor="password">Senha</label>
             <input
               id="password"
@@ -83,7 +83,7 @@ const CreateUser = () => {
           <UIButton
             type="submit"
             theme="contained-red-login"
-            className="user-login__submit-button"
+            className="create-user__submit-button"
             rounded
           >
             Criar Usuário

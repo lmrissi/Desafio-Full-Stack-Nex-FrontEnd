@@ -46,12 +46,12 @@ const CreateProduct = () => {
 
   return (
     <div className="wrapper">
-      <div className="user-login">
+      <div className="create-product">
         <div class="Logo">
-          <h1 className="user-login__title">Criar Produto</h1>
+          <h1 className="create-product__title">Criar Produto</h1>
         </div>
         <form onSubmit={onSubmit}>
-          <div className="user-login__form-control">
+          <div className="create-product__form-control">
             <label htmlFor="name">Nome</label>
             <input
               id="name"
@@ -60,7 +60,7 @@ const CreateProduct = () => {
               onChange={onChange}
               value={values.name} />
           </div>
-          <div className="user-login__form-control">
+          <div className="create-product__form-control">
             <label htmlFor="description">Descrição</label>
             <input
               id="description"
@@ -69,7 +69,7 @@ const CreateProduct = () => {
               onChange={onChange}
               value={values.description} />
           </div>
-          <div className="user-login__form-control">
+          <div className="create-product__form-control">
             <label htmlFor="price">Preço</label>
             <input
               id="price"
@@ -79,12 +79,12 @@ const CreateProduct = () => {
               value={values.price} />
           </div>
           {error && (
-            <div className="user-login__error">{error}</div>
+            <div className="create-product__error">{error}</div>
           )}
           <UIButton
             type="submit"
             theme="contained-red-login"
-            className="user-login__submit-button"
+            className="create-product__submit-button"
             rounded
           >
             Criar Produto
