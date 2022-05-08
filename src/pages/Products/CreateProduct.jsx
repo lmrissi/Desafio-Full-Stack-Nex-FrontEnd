@@ -1,8 +1,9 @@
+import CreateProduct from 'components/CreateProduct/CreateProduct';
+import Header from 'components/Header/Header';
 import React from 'react';
-import CreateUser from 'components/CreateUser/CreateUser';
 
 const PagesCreateProduct = () => (
-  <CreateUser />
+  <><Header /><CreateProduct /></>
 );
 
 export default PagesCreateProduct;

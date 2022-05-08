@@ -27,8 +27,22 @@ export const createUserOnApi = async (name, email, password) => {
     email: email,
     password: password,
   }
-  console.log(userData)
 
   return api.post('/user', userData)
+};
+
+export const createProductOnApi = async (token, name, description, price) => {  
+  const headers = {
+    Authorization: token
+  }
+
+  const productData = {
+    name: name,
+    description: description,
+    price: price,
+  }
+  console.log(productData)
+
+  return api.post('/product', productData, { headers: headers })
 };
 
