@@ -5,14 +5,6 @@ const StoreContext = createContext({
     setToken: () => {},
     user: null,
     setUser: () => {},
-    cart: [],
-    setCart: () => {},
-    total: null,
-    setTotal: () => {},
-    paymentType: null,
-    setPaymentType: () => {},
-    orders: null,
-    setOrders: () => {},
 })
 
 export default StoreContext;
