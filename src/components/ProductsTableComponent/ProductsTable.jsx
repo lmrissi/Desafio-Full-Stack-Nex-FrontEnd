@@ -5,8 +5,6 @@ import {
     SEARCH_PLACEHOLDER,
     TABLE_TITLES,
     TABLE_FIELDS,
-    TABLE_TYPES,
-    CURRENCY,
     HEADER_STYLE,
     CLASS_NAMES,
     PAGINATION,
@@ -23,19 +21,16 @@ const ProductsTable = (props) => {
                         {
                             title: TABLE_TITLES.NAME,
                             field: TABLE_FIELDS.NAME,
-                            type: TABLE_TYPES.NUMERIC,
                             cellStyle: {
-                                textAlign: HEADER_STYLE.TEXT_ALIGN,
+                                textAlign: 'center',
                             },
                             editable: EDITABLE
                         },
                         {
                             title: TABLE_TITLES.PRECO,
                             field: TABLE_FIELDS.PRECO,
-                            render: (rowData) => `${CURRENCY} ${parseFloat(rowData.amount).toFixed(2)}`,
-                            type: TABLE_TYPES.NUMERIC,
                             cellStyle: {
-                                textAlign: HEADER_STYLE.TEXT_ALIGN,
+                                textAlign: 'center',
                             },
                             editable: EDITABLE
                         },
@@ -43,12 +38,12 @@ const ProductsTable = (props) => {
                             title: TABLE_TITLES.DESCRIPTION,
                             field: TABLE_FIELDS.DESCRIPTION,
                             cellStyle: {
-                                textAlign: HEADER_STYLE.TEXT_ALIGN,
+                                textAlign: 'center',
                             },
                             editable: EDITABLE
                         }
                     ]}
-                    data={props.ordersArray}
+                    data={props.productsArray}
                     title={TABLE_TITLES.TITULO_TABELA}
                     options={{
                         pageSize: 10,

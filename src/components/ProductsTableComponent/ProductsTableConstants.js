@@ -3,7 +3,7 @@ export const SEARCH_PLACEHOLDER = 'Digite o número do pedido'
 export const TABLE_TITLES = {
     TITULO_TABELA: 'Produtos',
     NAME: 'Nome',
-    PRECO: 'Preço',
+    PRECO: 'Preço (R$)',
     DESCRIPTION: 'Descrição'
 }
 
@@ -12,12 +12,6 @@ export const TABLE_FIELDS = {
     PRECO: 'price',
     DESCRIPTION: 'description'
 }
-
-export const TABLE_TYPES = {
-    NUMERIC: 'numeric',
-}
-
-export const CURRENCY = 'R$'
 
 export const HEADER_STYLE = {
     textAlign: 'center',

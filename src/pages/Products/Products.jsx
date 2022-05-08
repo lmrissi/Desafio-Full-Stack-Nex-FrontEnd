@@ -18,7 +18,7 @@ const PagesProducts = () => {
         <>
             <Header />
             <ProductsTable
-                ordersArray={productsState}
+                productsArray={productsState}
             />
         </>
     );
