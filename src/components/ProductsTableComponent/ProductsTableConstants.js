@@ -1,4 +1,4 @@
-export const SEARCH_PLACEHOLDER = 'Digite o número do pedido'
+export const SEARCH_PLACEHOLDER = 'Digite o nome do produto'
 
 export const TABLE_TITLES = {
     TITULO_TABELA: 'Produtos',
