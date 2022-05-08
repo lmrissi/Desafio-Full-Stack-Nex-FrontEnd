@@ -27,16 +27,16 @@ const ProductsTable = (props) => {
                             editable: EDITABLE
                         },
                         {
-                            title: TABLE_TITLES.PRECO,
-                            field: TABLE_FIELDS.PRECO,
+                            title: TABLE_TITLES.DESCRIPTION,
+                            field: TABLE_FIELDS.DESCRIPTION,
                             cellStyle: {
                                 textAlign: 'center',
                             },
                             editable: EDITABLE
                         },
                         {
-                            title: TABLE_TITLES.DESCRIPTION,
-                            field: TABLE_FIELDS.DESCRIPTION,
+                            title: TABLE_TITLES.PRECO,
+                            field: TABLE_FIELDS.PRECO,
                             cellStyle: {
                                 textAlign: 'center',
                             },
