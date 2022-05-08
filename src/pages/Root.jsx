@@ -10,6 +10,7 @@ import RoutesPrivate from 'components/Routes/Private/Private'
 import PagesLogin from './Login/Login';
 import PagesProducts from './Products/Products';
 import StoreContext from 'components/Store/Context';
+import PagesCreateUser from './CreateUser/CreateUser';
 
 const PagesRoot = () => {
   
@@ -22,6 +23,7 @@ const PagesRoot = () => {
             {!token ? <Redirect to="/products" /> : <PagesLogin />}
             </Route>
             <Route path="/login" component={PagesLogin}/>
+            <Route path="/user" component={PagesCreateUser}/>
             <RoutesPrivate path="/products" component={PagesProducts} />
           </Switch>
       </StoreProvider>

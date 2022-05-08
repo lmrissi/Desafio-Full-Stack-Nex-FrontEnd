@@ -20,3 +20,15 @@ export const getProducts = async (token) => {
 
   return api.get('/products', { headers: headers })
 };
+
+export const createUserOnApi = async (name, email, password) => {  
+  const userData = {
+    name: name,
+    email: email,
+    password: password,
+  }
+  console.log(userData)
+
+  return api.post('/user', userData)
+};
+
