@@ -1,9 +1,11 @@
 export const HEADER_ROUTES = {
-    MENU: '/products',
+    PRODUTOS: '/products',
+    CADASTRAR_PRODUTO: '/product',
 }
 
 export const HEADER_NAMES = {
-    MENU: 'Produtos',
+    PRODUTOS: 'Produtos',
+    CADASTRAR_PRODUTO: 'Cadastrar Produto',
     LOGOUT: 'Sair'
 }
 
