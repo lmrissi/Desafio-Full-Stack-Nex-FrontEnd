@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import StoreContext from 'components/Store/Context';
 import UIButton from 'components/Button/Button';
-import { createUserOnApi } from '../../../services/api'
+import { createUserOnApi } from '../../services/api'
 
 import './CreateUser.css';
 

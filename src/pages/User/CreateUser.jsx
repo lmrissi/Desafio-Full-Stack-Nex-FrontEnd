@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateUser from 'components/User/CreateUser/CreateUser';
+import CreateUser from 'components/CreateUser/CreateUser';
 
 const PagesCreateUser = () => (
   <CreateUser />

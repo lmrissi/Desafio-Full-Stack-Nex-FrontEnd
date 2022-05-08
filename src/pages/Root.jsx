@@ -7,10 +7,11 @@ import {
 } from 'react-router-dom';
 import StoreProvider from 'components/Store/Provider';
 import RoutesPrivate from 'components/Routes/Private/Private'
-import PagesLogin from './Login/Login';
+import PagesLogin from './User/Login';
 import PagesProducts from './Products/Products';
 import StoreContext from 'components/Store/Context';
-import PagesCreateUser from './CreateUser/CreateUser';
+import PagesCreateUser from './User/CreateUser';
+import PagesCreateProduct from './Products/CreateProduct';
 
 const PagesRoot = () => {
   
@@ -25,6 +26,7 @@ const PagesRoot = () => {
             <Route path="/login" component={PagesLogin}/>
             <Route path="/user" component={PagesCreateUser}/>
             <RoutesPrivate path="/products" component={PagesProducts} />
+            <RoutesPrivate path="/product" component={PagesCreateProduct} />
           </Switch>
       </StoreProvider>
     </Router>
