@@ -41,12 +41,14 @@ body {
 }
 
 .links button {
+    font-family: Roboto-Regular;
     color:black;
     background-color: transparent;
     font-size: 20px;
     line-height: 32px;
     margin: 0 10px;
     text-decoration: none;
+    border: none
 }
  
 .links a:hover {
